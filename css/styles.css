@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--amarelo-peincipal:#FF9E00;
+	--amarelo-secundario:#FF9900;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: #666666;
+}
+nav{
+	width: 100%;
+	padding: 1%;
+	height: 12%;
+	background-color: #FFFFFF;
+	position: fixed;
+	z-index: 1;
+	border-bottom: 1px solid var(--amarelo-peincipal);
+}
+.logo{
+	float: left;
+}
+
+.logo a img{
+	width: 100px;
+}
+
+.menu{
+	float: left;
+	text-align: center;
+	width: 80%;
+}
+
+.social{
+	float: right;
+	width: 10%;
+}
+
+.menu a{
+	display: inline-block;
+	padding: 2% 2% 0.5% 2%;
+	color: #666666;
+	
+}
+
+.menu a:hover{
+	color: var(--amarelo-peincipal);
+	border-bottom:  1px solid var(--amarelo-peincipal);
+}
+
+.social a{
+	display: inline-block;
+	padding: 2% 2% 0.5% 2%;
+	color: #666666;
+}
+
+.social i{
+	font-size: 1.5rem;
+}
+
+.social a:hover{
+	color: #333333;
+}
+
+header{
+	width: 100%;
+	height: 85%;
+	padding-top: 5.2%;
+	overflow: hidden ;
+	
+}
+.slides, .slides img{
+	width: 100%;
+}
+
+.corpo{
+	width: 100%;
+	min-height: 50%;
+}
+
+footer{
+	width: 100%;
+	height: 440px;
+	clear: both;
+	border-top: 1px solid var(--amarelo-peincipal);
+	
+}
+
+footer article{
+	width: 50%;
+	float: left;
+	padding: 1%;
+	height: 100%;
+	
+}
+.formulario{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+.campo{
+	width: 100%;
+	padding: 19px;
+	margin-bottom: 5px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1rem;
+	border: 1px solid #CCCCCC;
+	resize: none;
+	
+}
+.botao{
+	width: 100%;
+	color: #FFFFFF;
+	background-color: var(--amarelo-peincipal);
+	border: 3px solid var(--amarelo-peincipal);
+	padding: 13px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	
+}
+.botao:hover{
+	background-color: transparent;
+	color: var(--amarelo-peincipal);
+
+}
+.rodape{
+	text-align: center;
+	padding: 1%;
+	background-color: #333333;
+	color: #FFFFFF;
+	clear: both;
+}
+.titulo{
+	padding: 120px 0 50px 20px;
+	padding-left: 20px;	
+}
+.sobre{
+	width: 80%;
+	margin: 0 auto;
+	line-height: 20px;
+	text-align: justify;
+	border: 1px solid var(--amarelo-peincipal);
+	padding: 2%;
+	border-radius: 15px;
+	margin-bottom: 30px
+}
+.sobre p{
+	margin: 2% 0;
+	
+}
+.corpo article{
+	width: 70%;
+	margin: auto;
+}
+.corpo article div{
+	width: 33.3%;
+	float: left;
+	
+}
+.corpo article div img{
+	width: 100%;
+	height: 210px;
+}
+.imagens{
+	margin-bottom: 500px;
+	clear: both;
+	
+}
+.links{
+	text-align: right;
+	padding-right: 5%;
+	border-top: 1px solid #FFCC00;
+	margin-top: 1%;
+	position: relative;
+	
+}
+.links a{
+	color: #666666;
+	display: inline-block;
+	padding: 1%;
+}
+.links a:hover{
+	color: #FFCC00;
+	text-decoration: overline;
+}
+table{
+	margin-top: 70px;
+}
+.iconedit{
+	width: 10px;
+	text-align: center;
+}
+.iconedit a{
+	color: #666666;
+
+}
+.iconedit a:hover{
+	color: #333333;
+}
+.linhas tr:nth-child(odd){
+	background-color: #DDDDDD;
+
+}
+.linhas tr:nth-child(even){
+	background-color: #EEEEEE;
+
+}
+.linhas tr:first-child{
+	background-color: #FFFFFF;
+}
+.linhas tr:last-child{
+	background-color: #FFFFFF;
+}
+.iconpg{
+	color: #666666;
+	padding: 5px 10px;
+}
+.produtos{
+	width: 23%;
+	padding: 1%;
+	margin: 1%;
+	float: left;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	height: 380px;
+	position: relative;
+
+}
+.produtos h4{
+	margin: 10px;
+}
+.produtos h3{
+	position: absolute;
+	bottom: 60px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+.produtos input{
+	position: absolute;
+	bottom: 10px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border: 2px solid transparent;
+	background-color: var(--amarelo-secundario);
+	color: #FFFFFF;
+	padding: 10px;
+	width: 60%;
+	border-radius: 15px;
+}
+.produtos input:hover{
+	border-color: var(--amarelo-secundario);
+	background-color: transparent;
+	color: var(--amarelo-secundario);
+	cursor: pointer;
+}
+.foto{
+	float: left;
+	width: 30%;
+	margin: 2% 5%;
+	text-align: right;
+}
+.foto img{
+	width: 400px;
+}
+.descri{
+	float: left;
+	margin: 5%;
+	width: 50%;
+	text-align: justify;
+}
+.qtde{
+	padding: 15px;
+	width: 80px;
+}
+.formfiltro{
+	padding: 20px;
+	padding-left: 50px;
+}
+.formfiltro p{
+	padding: 5px;
+}
+.barrafiltro{
+	width: 100%;
+	color: #FFFFFF;
+	background-color: var(--amarelo-peincipal);
+	border: 3px solid var(--amarelo-peincipal);
+	padding: 13px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	
+}
